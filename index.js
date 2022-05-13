@@ -16,6 +16,7 @@
 
 // --------------------------------task 2
 
+/*
 function getRandomInRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -325,3 +326,44 @@ if (entranses == 1) {
     alert("Такой квартиры нет!");
   }
 }
+*/
+
+// --------------------------------task 3
+
+var t;
+
+function evenOdd(even, odd) {
+  if (even % 2 == 1 && odd % 2 == 1) {
+    t = +even + +odd;
+  } else if (even % 2 == 0 && odd % 2 == 0) {
+    t = even * odd;
+  } else if (even % 2 == 1 && odd % 2 == 0) {
+    t = even;
+  } else {
+    t = odd;
+  }
+}
+
+var e = prompt("введите первое число");
+
+for (; ;) {
+  if (e != +e || e == "") {
+    e = prompt("введите первое число");
+  } else {
+    break;
+  }
+}
+
+var o = prompt("введите второе число");
+
+for (; ;) {
+  if (o != +o || o == "") {
+    o = prompt("введите второе число");
+  } else {
+    break;
+  }
+}
+
+evenOdd(e, o);
+
+console.log(t);
