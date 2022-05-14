@@ -78,6 +78,8 @@ a {
   color: white;
   background-color: red;
   border-radius: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .teble {
@@ -96,6 +98,8 @@ a {
 
 .pias:last-child {
   border-bottom: 0px;
+  padding: 0px;
+  padding-top: 5px;
 }
 
 input {
@@ -104,18 +108,18 @@ input {
 
 .button {
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: #f4511e;
   border: none;
   color: #FFFFFF;
   text-align: center;
   font-size: 15px;
-  padding: 10px;
-  width: 90%;
+  padding: 10px 2px;
+  width: 50%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 2px;
 }
 
 .button span {
@@ -137,10 +141,39 @@ input {
 }
 
 .button:hover span {
-  padding-right: 25px;
+  padding-right: 23px;
 }
 
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.button-two {
+  display: block;
+  padding: 10px 7px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 6px #999;
+          box-shadow: 0 6px #999;
+  float: right;
+}
+
+.button-two:hover {
+  background-color: #3e8e41;
+}
+
+.button-two:active {
+  background-color: #3e8e41;
+  -webkit-box-shadow: 0 4px #666;
+          box-shadow: 0 4px #666;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }

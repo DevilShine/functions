@@ -18,7 +18,9 @@
   color: white;
   background-color: red;
   border-radius: 50%;
+  transition: 1s;
 }
 
 @import "./scss/table";
 @import "./scss/button";
+@import "./scss/button-two";

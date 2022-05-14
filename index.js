@@ -372,6 +372,10 @@ console.log(t);
 
 // --------------------------------task 4
 
+function getRandomInRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 var xfi, yfi, xse, yse, xth, yth, xfo, yfo;
 
 document.getElementById("button").onclick = function () {
@@ -404,5 +408,42 @@ document.getElementById("button").onclick = function () {
   document.getElementById("d").style.top = yfo + "px";
 }
 
+document.getElementById("button-two").onclick = function () {
 
+  xfi = getRandomInRange(-400, 400);
+  document.getElementById("a").style.position = "relative";
+  document.getElementById("a").style.left = xfi + "px";
+  document.getElementById("xfi").value = xfi;
+
+  yfi = getRandomInRange(-400, 400);
+  document.getElementById("a").style.top = yfi + "px";
+  document.getElementById("yfi").value = yfi;
+
+  xse = getRandomInRange(-400, 400);
+  document.getElementById("b").style.position = "relative";
+  document.getElementById("b").style.left = xse + "px";
+  document.getElementById("xse").value = xse;
+
+  yse = getRandomInRange(-400, 400);
+  document.getElementById("b").style.top = yse + "px";
+  document.getElementById("yse").value = yse;
+
+  xth = getRandomInRange(-400, 400);
+  document.getElementById("c").style.position = "relative";
+  document.getElementById("c").style.left = xth + "px";
+  document.getElementById("xth").value = xth;
+
+  yth = getRandomInRange(-400, 400);
+  document.getElementById("c").style.top = yth + "px";
+  document.getElementById("yth").value = yth;
+
+  xfo = getRandomInRange(-400, 400);
+  document.getElementById("d").style.position = "relative";
+  document.getElementById("d").style.left = xfo + "px";
+  document.getElementById("xfo").value = xfo;
+
+  yfo = getRandomInRange(-400, 400);
+  document.getElementById("d").style.top = yfo + "px";
+  document.getElementById("yfo").value = yfo;
+}
 
