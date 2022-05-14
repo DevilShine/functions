@@ -408,42 +408,84 @@ document.getElementById("button").onclick = function () {
   document.getElementById("d").style.top = yfo + "px";
 }
 
-document.getElementById("button-two").onclick = function () {
+var check = document.documentElement.clientWidth;
 
-  xfi = getRandomInRange(-400, 400);
-  document.getElementById("a").style.position = "relative";
-  document.getElementById("a").style.left = xfi + "px";
-  document.getElementById("xfi").value = xfi;
+if (check > 400) {
+  document.getElementById("button-two").onclick = function () {
 
-  yfi = getRandomInRange(-400, 400);
-  document.getElementById("a").style.top = yfi + "px";
-  document.getElementById("yfi").value = yfi;
+    xfi = getRandomInRange(-400, 400);
+    document.getElementById("a").style.position = "relative";
+    document.getElementById("a").style.left = xfi + "px";
+    document.getElementById("xfi").value = xfi;
 
-  xse = getRandomInRange(-400, 400);
-  document.getElementById("b").style.position = "relative";
-  document.getElementById("b").style.left = xse + "px";
-  document.getElementById("xse").value = xse;
+    yfi = getRandomInRange(-400, 400);
+    document.getElementById("a").style.top = yfi + "px";
+    document.getElementById("yfi").value = yfi;
 
-  yse = getRandomInRange(-400, 400);
-  document.getElementById("b").style.top = yse + "px";
-  document.getElementById("yse").value = yse;
+    xse = getRandomInRange(-400, 400);
+    document.getElementById("b").style.position = "relative";
+    document.getElementById("b").style.left = xse + "px";
+    document.getElementById("xse").value = xse;
 
-  xth = getRandomInRange(-400, 400);
-  document.getElementById("c").style.position = "relative";
-  document.getElementById("c").style.left = xth + "px";
-  document.getElementById("xth").value = xth;
+    yse = getRandomInRange(-400, 400);
+    document.getElementById("b").style.top = yse + "px";
+    document.getElementById("yse").value = yse;
 
-  yth = getRandomInRange(-400, 400);
-  document.getElementById("c").style.top = yth + "px";
-  document.getElementById("yth").value = yth;
+    xth = getRandomInRange(-400, 400);
+    document.getElementById("c").style.position = "relative";
+    document.getElementById("c").style.left = xth + "px";
+    document.getElementById("xth").value = xth;
 
-  xfo = getRandomInRange(-400, 400);
-  document.getElementById("d").style.position = "relative";
-  document.getElementById("d").style.left = xfo + "px";
-  document.getElementById("xfo").value = xfo;
+    yth = getRandomInRange(-400, 400);
+    document.getElementById("c").style.top = yth + "px";
+    document.getElementById("yth").value = yth;
 
-  yfo = getRandomInRange(-400, 400);
-  document.getElementById("d").style.top = yfo + "px";
-  document.getElementById("yfo").value = yfo;
+    xfo = getRandomInRange(-400, 400);
+    document.getElementById("d").style.position = "relative";
+    document.getElementById("d").style.left = xfo + "px";
+    document.getElementById("xfo").value = xfo;
+
+    yfo = getRandomInRange(-400, 400);
+    document.getElementById("d").style.top = yfo + "px";
+    document.getElementById("yfo").value = yfo;
+  }
+} else {
+  document.getElementById("button-two").onclick = function () {
+
+    xfi = getRandomInRange(-100, 100);
+    document.getElementById("a").style.position = "relative";
+    document.getElementById("a").style.left = xfi + "px";
+    document.getElementById("xfi").value = xfi;
+
+    yfi = getRandomInRange(-100, 100);
+    document.getElementById("a").style.top = yfi + "px";
+    document.getElementById("yfi").value = yfi;
+
+    xse = getRandomInRange(-100, 100);
+    document.getElementById("b").style.position = "relative";
+    document.getElementById("b").style.left = xse + "px";
+    document.getElementById("xse").value = xse;
+
+    yse = getRandomInRange(-100, 100);
+    document.getElementById("b").style.top = yse + "px";
+    document.getElementById("yse").value = yse;
+
+    xth = getRandomInRange(-100, 100);
+    document.getElementById("c").style.position = "relative";
+    document.getElementById("c").style.left = xth + "px";
+    document.getElementById("xth").value = xth;
+
+    yth = getRandomInRange(-100, 100);
+    document.getElementById("c").style.top = yth + "px";
+    document.getElementById("yth").value = yth;
+
+    xfo = getRandomInRange(-100, 100);
+    document.getElementById("d").style.position = "relative";
+    document.getElementById("d").style.left = xfo + "px";
+    document.getElementById("xfo").value = xfo;
+
+    yfo = getRandomInRange(-100, 100);
+    document.getElementById("d").style.top = yfo + "px";
+    document.getElementById("yfo").value = yfo;
+  }
 }
-
