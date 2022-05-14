@@ -1,1 +1,24 @@
 @import "./scss/reset";
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+
+}
+
+.st {
+  padding-top: 2px;
+  text-align: center;
+  margin-top: 400px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+}
+
+@import "./scss/table";
+@import "./scss/button";

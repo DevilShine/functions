@@ -330,6 +330,7 @@ if (entranses == 1) {
 
 // --------------------------------task 3
 
+/*
 var t;
 
 function evenOdd(even, odd) {
@@ -367,3 +368,41 @@ for (; ;) {
 evenOdd(e, o);
 
 console.log(t);
+*/
+
+// --------------------------------task 4
+
+var xfi, yfi, xse, yse, xth, yth, xfo, yfo;
+
+document.getElementById("button").onclick = function () {
+  xfi = document.getElementById("xfi").value;
+  document.getElementById("a").style.position = "relative";
+  document.getElementById("a").style.left = xfi + "px";
+
+  yfi = document.getElementById("yfi").value;
+  document.getElementById("a").style.top = yfi + "px";
+
+  xse = document.getElementById("xse").value;
+  document.getElementById("b").style.position = "relative";
+  document.getElementById("b").style.left = xse + "px";
+
+  yse = document.getElementById("yse").value;
+  document.getElementById("b").style.top = yse + "px";
+
+  xth = document.getElementById("xth").value;
+  document.getElementById("c").style.position = "relative";
+  document.getElementById("c").style.left = xth + "px";
+
+  yth = document.getElementById("yth").value;
+  document.getElementById("c").style.top = yth + "px";
+
+  xfo = document.getElementById("xfo").value;
+  document.getElementById("d").style.position = "relative";
+  document.getElementById("d").style.left = xfo + "px";
+
+  yfo = document.getElementById("yfo").value;
+  document.getElementById("d").style.top = yfo + "px";
+}
+
+
+
