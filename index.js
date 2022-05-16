@@ -372,6 +372,7 @@ console.log(t);
 
 // --------------------------------task 4
 
+/*
 function getRandomInRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -450,6 +451,7 @@ if (check > 400) {
     document.getElementById("yfo").value = yfo;
   }
 } else {
+
   document.getElementById("button-two").onclick = function () {
 
     xfi = getRandomInRange(-100, 100);
@@ -489,3 +491,22 @@ if (check > 400) {
     document.getElementById("yfo").value = yfo;
   }
 }
+*/
+
+// --------------------------------task 5
+
+function sequence(start, step) {
+  let callNumber = start;
+  return function () {
+    var returnValue = callNumber;
+    callNumber += step;
+    return returnValue;
+  }
+}
+
+var i = sequence(0, 5);
+
+console.log(i());
+console.log(i());
+console.log(i());
+console.log(i());
